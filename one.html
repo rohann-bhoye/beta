@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BucketStudy - Home</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @keyframes fadeInOut {
+                0% { opacity: 0; transform: translateY(-10px); }
+                50% { opacity: 1; transform: translateY(0px); }
+                100% { opacity: 0; transform: translateY(10px); }
+            }
+            .upcoming-container {
+                background: red;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                font-size: 1.5em;
+                font-weight: bold;
+                position: relative;
+                overflow: hidden;
+            }
+            .upcoming-text {
+                display: inline-block;
+                animation: fadeInOut 3s infinite;
+            }
+            .challenges-menu {
+                position: relative;
+            }
+            .coming-soon {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background: rgba(0, 0, 0, 0.8);
+                color: white;
+                padding: 5px;
+                font-size: 0.8em;
+                border-radius: 5px;
+                white-space: nowrap;
+            }
+            .challenges-menu:hover .coming-soon {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="notification-bar">
+            <p>🚀 This is a beta version. We are updating it day by day for better performance!</p>
+        </div>
+        <header>
+            <div class="logo">BUCKET<span class="logo-name">STUDY</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                    <li><a href="internship.html">Internship - Apply Here</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                    <li class="challenges-menu">
+                        <a href="Challenges.html">Challenges</a>
+                        <span class="coming-soon">Coming Soon</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="login">Login</button>
+                <button class="signup">Sign Up</button>
+            </div>
+        </header>
+        
+        <div class="upcoming-container">
+            <p class="upcoming-text">🚀 Exciting New Features Coming Soon! Stay Tuned! 🚀</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BucketStudy - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Notification Bar -->
+    <div class="notification-bar">
+        <p>🚀 This is a beta version. We are updating it day by day for better performance!</p>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">BUCKET<span class="logo-name">STUDY</span></div>
+        
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle" id="menuToggle">
+            <span class="menu-icon">☰</span>
+        </button>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="internship.html">Internship - Apply Here</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Desktop Auth Buttons -->
+        <div class="auth-buttons">
+            <button class="login">Login</button>
+            <button class="signup">Sign Up</button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="internship.html">Internship - Apply Here</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-auth-buttons">
+            <button class="login">Login</button>
+            <button class="signup">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- Upcoming Features Banner -->
+    <div class="upcoming-container">
+        <p class="upcoming-text">🚀 Exciting New Features Coming Soon! Stay Tuned! 🚀</p>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="content">
+        <div class="text">
+            <h1>Streamline Your <br class="desktop-only"> Internship Process <br class="desktop-only"> with Ease!</h1>
+            <p>Manage applications, track progress, and simplify internship coordination—all in one place.</p>
+            <a href="internship.html"><button class="get-started">Get Started</button></a>
+        </div>
+        <div class="image">
+            <img src="Illustration.png" alt="Internship Process" />
+        </div>
+    </section>
+
+    <!-- Scrolling Banner -->
+    <div class="banner-container">
+        <div class="banner">Design • Develop • Discover • Design • Develop • Discover • Design • Develop • Discover • Design • Develop • Discover • Design • Develop • Discover </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features-section">
+        <div class="below-banner-container">
+            <div class="below-banner-text">Features</div>
+            <div class="browse-text">Browse available dream's internships</div>
+        </div>
+
+        <div class="boxes-container">
+            <!-- Box 1 -->
+            <div class="feature-box box1">
+                <div class="box-content">
+                    <div class="box-text1">Internship</div>
+                    <div class="browse-small1">Browse available internships</div>
+                    <p class="learn-btn1"><img src="Icon.png" alt="Icon">Learn More</p>
+                </div>
+                <img src="Illustration1.png" alt="Internship Image">
+            </div>
+
+            <!-- Box 2 -->
+            <div class="feature-box box2">
+                <div class="box-content">
+                    <div class="box-text2">Application Tracking</div>
+                    <div class="browse-small2">Monitor applications in real-time</div>
+                    <p class="learn-btn2"><img src="Icon.png" alt="Icon">Learn More</p>
+                </div>
+                <img src="Illustration2.png" alt="Application Tracking Image">
+            </div>
+
+            <!-- Box 3 -->
+            <div class="feature-box box3">
+                <div class="box-content">
+                    <div class="box-text3">Automated Evaluations</div>
+                    <div class="browse-small3">Assess intern performance easily</div>
+                    <p class="learn-btn3"><img src="Icon.png" alt="Icon">Learn More</p>
+                </div>
+                <img src="Illustration3.png" alt="Automated Evaluations Image">
+            </div>
+
+            <!-- Box 4 -->
+            <div class="feature-box box4">
+                <div class="box-content">
+                    <div class="box-text4">Student Dashboard</div>
+                    <div class="browse-small4">Dedicated portals for Student's</div>
+                    <p class="learn-btn4"><img src="Icon.png" alt="Icon">Learn More</p>
+                </div>
+                <img src="Illustration4.png" alt="Student Dashboard Image">
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Box -->
+    <div class="large-boxes-container">
+        <div class="large-box">
+            <div class="left-side">
+                <h3>Let's make things happen</h3>
+                <p class="large-box-p">Contact us today to learn more about how our Internship <br class="desktop-only">
+                    Management System can help you streamline the <br class="desktop-only">
+                    internship process and enhance efficiency for students <br class="desktop-only"> and
+                    employers</p>
+                <a href="internship.html"><button class="large-box-dec">Register for Free</button> </a>
+            </div>
+            <div class="right-side">
+                <img src="Illustration5.png" alt="CTA Illustration">
+            </div>
+        </div>
+    </div>
+
+    <!-- Working Process Section -->
+    <div class="process-section">
+        <div class="below-banner-container-two">
+            <div class="below-banner-text">Our Working Process</div>
+            <div class="browse-text">Step-by-Step Guide to Achieving Your Business Goals</div>
+        </div>
+
+        <div class="steps">
+            <div class="step" onclick="toggleStep(1)">
+                <h2>01. Sign Up & Create Your Profile <span class="plus-sign">+</span></h2>
+                <div class="black-line"></div>
+                <p class="step-content">Register on the platform and complete your profile with skills, education, and interests.</p>
+            </div>
+            <div class="step" onclick="toggleStep(2)">
+                <h2>02. Browse & Apply for Internships <span class="plus-sign">+</span></h2>
+                <div class="black-line"></div>
+                <p class="step-content">1. Explore internship opportunities from various companies. <br>
+                    2. Apply to internships that match your career goals.</p>
+            </div>
+            <div class="step" onclick="toggleStep(3)">
+                <h2>03. Wait for Approval or Rejection <span class="plus-sign">+</span></h2>
+                <div class="black-line"></div>
+                <p class="step-content">1. Employers review applications and shortlist candidates. <br>
+                    2. Get notified about your application status.</p>
+            </div>
+            <div class="step" onclick="toggleStep(4)">
+                <h2>04. Receive Offer Letter & Start Internship <span class="plus-sign">+</span></h2>
+                <div class="black-line"></div>
+                <p class="step-content">1. If shortlisted, receive an offer letter from the employer. <br>
+                    2. Begin your internship and start working on assigned tasks.</p>
+            </div>
+            <div class="step" onclick="toggleStep(5)">
+                <h2>05. Complete Internship & Get Certified <span class="plus-sign">+</span></h2>
+                <div class="black-line"></div>
+                <p class="step-content">1. Submit final reports and evaluations. <br>
+                    2. Receive your internship completion certificate and performance review.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="team-section">
+        <div class="below-banner-container-three">
+            <div class="below-banner-text">Team</div>
+            <div class="browse-text">Our talented team brings expertise, creativity, and passion to every project—meet the minds behind our success!</div>
+        </div>
+
+        <div class="team-container">
+            <div class="team-box">
+                <a href="https://www.linkedin.com/in/rohan-bhoye-webdeveloper/"><img class="social-icon" src="Social icon.png" alt="LinkedIn"></a>
+                <img class="image1" src="team image/team1.jpg" alt="Rohan Bhoye">
+                <h2>Rohan Bhoye</h2>
+                <span class="team-post">CEO And Founder</span>
+                <p>1.5+ years of experience in full-stack development. Expertise in React.js, Node.js, and database management. Passionate about building scalable and efficient web applications.</p>
+            </div>
+
+            <div class="team-box">
+                <a href="https://in.linkedin.com/in/sunayana-guthale-59aa0919b"><img class="social-icon" src="Social icon.png" alt="LinkedIn"></a>
+                <img class="image1" src="team image/team2.png" alt="Sunayana Guthale">
+                <h2>Sunayana Guthale</h2>
+                <span class="team-post">Backend Development</span>
+                <p>Passionate Backend Developer | Crafting Scalable & Efficient Solutions with Spring Boot & Java and database management. | Building the Future, One API at a Time!</p>
+            </div>
+
+            <div class="team-box">
+                <a href="https://www.linkedin.com/in/abhishek-doltade15"><img class="social-icon" src="Social icon.png" alt="LinkedIn"></a>
+                <img class="image1" src="team image/team3.jpeg" alt="Abhishek Doltade">
+                <h2>Abhishek Doltade</h2>
+                <span class="team-post">Frontend Development</span>
+                <p>Passionate Frontend Developer with expertise in React.js and Tailwind CSS, crafting responsive and user-friendly web applications. Dedicated to delivering seamless digital experiences.</p>
+            </div>
+
+            <div class="team-box">
+                <a href="https://www.linkedin.com/in/fahad-nathani/"><img class="social-icon" src="Social icon.png" alt="LinkedIn"></a>
+                <img class="image1" src="team image/team4.jpeg" alt="Fahad Nathani">
+                <h2>Fahad Nathani</h2>
+                <span class="team-post">Frontend Development</span>
+                <p>Transforming ideas into seamless digital experiences with my expertise in React.js, JavaScript, and Tailwind CSS. Passionate about transforming aesthetic visions into intuitive, high-performing web experiences.</p>
+            </div>
+
+            <div class="team-box">
+                <a href="https://www.linkedin.com/in/fahad-nathani/"><img class="social-icon" src="Social icon.png" alt="LinkedIn"></a>
+                <img class="image1" src="team image/team5.jpeg" alt="Isha Giddia">
+                <h2>Isha Giddia</h2>
+                <span class="team-post">UI/UX Desinger</span>
+                <p>Bringing ideas to life through intuitive design. As a UI/UX designer, I focus on creating user-centered, visually engaging, and functional digital experiences.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-container">
+        <footer class="footer-top">
+            <div class="footer-logo">BUCKET<span class="footer-name">STUDY</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav1">Home</a></li>
+                    <li><a href="Aboutus.html" class="nav1">About Us</a></li>
+                    <li><a href="internship.html" class="nav1">Internship - Apply Here</a></li>
+                    <li><a href="ContactUs.html" class="nav1">Contact Us</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+        <footer class="footer-middle">
+            <div class="left-side-footer">
+                <h2 class="contact-us-footer">Contact Us :</h2>
+                <p>Email: hello@bucketstudy.com</p>
+                <p>Address: Nashik, Maharashtra, India</p>
+            </div>
+            <div class="right-side-footer">
+                <input class="footer-email" type="text" placeholder="Email">
+                <button>Subscribe to News</button>
+            </div>
+        </footer>
+
+        <footer class="footer-last">
+            <p>@2025 BucketStudy. All Rights Reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="PrivacyPolicy.html" class="nav1">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            if (mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                this.querySelector('.menu-icon').textContent = '☰';
+            } else {
+                mobileMenu.classList.add('active');
+                this.querySelector('.menu-icon').textContent = '✕';
+            }
+        });
+
+        // Steps toggle functionality
+        function toggleStep(stepIndex) {
+            let steps = document.querySelectorAll('.step');
+            let plusSigns = document.querySelectorAll('.plus-sign');
+    
+            steps.forEach((step, index) => {
+                let content = step.querySelector('.step-content');
+                let blackLine = step.querySelector('.black-line');
+    
+                if (index + 1 === stepIndex) {
+                    step.classList.toggle('active');
+                    plusSigns[index].textContent = step.classList.contains('active') ? "-" : "+";
+                    content.style.display = step.classList.contains('active') ? "block" : "none";
+                    blackLine.style.display = step.classList.contains('active') ? "block" : "none";
+                } else {
+                    step.classList.remove('active');
+                    plusSigns[index].textContent = "+";
+                    step.querySelector('.step-content').style.display = "none";
+                    step.querySelector('.black-line').style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
